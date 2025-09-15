@@ -52,48 +52,7 @@
   <span id="sumit77">Call Riya</span>
 </a>
 
-<script>
-// ✅ Names list
-const amit66 = [
-  "Neha Rani",
-  "Swati Bhabhi",
-  "Pooja ji",
-  "Anjali",
-  "Riya Patel",
-  "Simran"
-];
 
-// ✅ Redirect URLs list
-const vikas32 = [
-  "https://a.com",
-  "https://s.com",
-  "https://d.com",
-  "https://f.com",
-  "https://g.com",
-  "https://h.com"
-];
-
-const preeti55 = document.getElementById("sumit77");
-
-// Function: change name randomly
-function kavita21(){
-  const randomName = amit66[Math.floor(Math.random() * amit66.length)];
-  preeti55.textContent = "Call " + randomName;
-}
-
-// First call
-kavita21();
-
-// Every 10 sec change
-setInterval(kavita21, 10000);
-
-// Redirect on click
-document.getElementById("gopal45").addEventListener("click", function(e){
-  e.preventDefault();
-  const randomLink = vikas32[Math.floor(Math.random() * vikas32.length)];
-  window.location.href = randomLink;
-});
-</script>
 
 
 <meta charset="utf-8">
@@ -149,21 +108,3 @@ document.getElementById("gopal45").addEventListener("click", function(e){
   <span class="floating-btn__text">Join</span>
 </a>
 
-<script>
-// ✅ Redirect URLs list
-const urls = [
-  "https://a.com",
-  "https://s.com",
-  "https://d.com",
-  "https://f.com",
-  "https://g.com",
-  "https://h.com"
-];
-
-document.getElementById("random-btn").addEventListener("click", function(e){
-  e.preventDefault();
-  // random URL pick
-  const randomLink = urls[Math.floor(Math.random() * urls.length)];
-  window.location.href = randomLink;
-});
-</script>
