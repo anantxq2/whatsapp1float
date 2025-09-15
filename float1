@@ -1,0 +1,169 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floating Button</title>
+
+<style>
+/* Floating Button */
+.nihat12{
+  position:fixed;
+  left:50%;
+  bottom:20px;
+  transform:translateX(-50%);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#e53935; /* 🔴 Red color */
+  color:#fff;
+  font-family:system-ui,Arial,sans-serif;
+  font-weight:600;
+  font-size:16px;
+  border-radius:50px;
+  padding:10px 22px;
+  text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  transition:transform .15s ease, box-shadow .15s ease;
+  z-index:9999;
+}
+.nihat12:hover{
+  transform:translateX(-50%) translateY(-3px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* Icon style */
+.rahul89{
+  width:22px;
+  height:22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rahul89 img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+</style>
+
+<a id="gopal45" class="nihat12" href="#">
+  <span class="rahul89">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
+  </span>
+  <span id="sumit77">Call Riya</span>
+</a>
+
+<script>
+// ✅ Names list
+const amit66 = [
+  "Neha Rani",
+  "Swati Bhabhi",
+  "Pooja ji",
+  "Anjali",
+  "Riya Patel",
+  "Simran"
+];
+
+// ✅ Redirect URLs list
+const vikas32 = [
+  "https://a.com",
+  "https://s.com",
+  "https://d.com",
+  "https://f.com",
+  "https://g.com",
+  "https://h.com"
+];
+
+const preeti55 = document.getElementById("sumit77");
+
+// Function: change name randomly
+function kavita21(){
+  const randomName = amit66[Math.floor(Math.random() * amit66.length)];
+  preeti55.textContent = "Call " + randomName;
+}
+
+// First call
+kavita21();
+
+// Every 10 sec change
+setInterval(kavita21, 10000);
+
+// Redirect on click
+document.getElementById("gopal45").addEventListener("click", function(e){
+  e.preventDefault();
+  const randomLink = vikas32[Math.floor(Math.random() * vikas32.length)];
+  window.location.href = randomLink;
+});
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floating Button</title>
+
+<style>
+/* Floating Button */
+.floating-btn{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#25D366;
+  color:#fff;
+  font-family:system-ui,Arial,sans-serif;
+  font-weight:600;
+  font-size:16px;
+  border-radius:50px;
+  padding:10px 18px;
+  text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  transition:transform .15s ease, box-shadow .15s ease;
+  z-index:9999;
+}
+.floating-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* Icon style */
+.floating-btn__icon{
+  width:22px;
+  height:22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.floating-btn__icon img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+</style>
+
+<a id="random-btn" class="floating-btn" href="#">
+  <span class="floating-btn__icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
+  </span>
+  <span class="floating-btn__text">Join</span>
+</a>
+
+<script>
+// ✅ Redirect URLs list
+const urls = [
+  "https://a.com",
+  "https://s.com",
+  "https://d.com",
+  "https://f.com",
+  "https://g.com",
+  "https://h.com"
+];
+
+document.getElementById("random-btn").addEventListener("click", function(e){
+  e.preventDefault();
+  // random URL pick
+  const randomLink = urls[Math.floor(Math.random() * urls.length)];
+  window.location.href = randomLink;
+});
+</script>
